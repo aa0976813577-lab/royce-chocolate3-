@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROYCE' Chocolate | Premium Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="marquee-bar">✨ 全館消費滿 NT$1,500 免運費 | 北海道直送限量發售中 ✨</div>
+
+    <header>
+        <div class="logo"><a href="index.html">ROYCE'</a></div>
+        <nav>
+            <a href="index.html">Our Chocolate</a>
+            <a href="product.html">Gift Collection</a>
+            <div class="font-controls">
+                <button id="font-decrease" class="font-btn">A-</button>
+                <button id="font-increase" class="font-btn">A+</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-padding" style="background:#fff; padding-top: 50px;">
+        <div class="container-wide">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="img\1-1.jpg" alt="S1">
+                    <img src="img\1-2.jpg" alt="S2">
+                </div>
+                <button class="carousel-btn prev" style="position:absolute; left:20px; top:50%; z-index:10; background:rgba(0,0,0,0.5); color:white; border:none; padding:15px; border-radius:50%; cursor:pointer;">&#10094;</button>
+                <button class="carousel-btn next" style="position:absolute; right:20px; top:50%; z-index:10; background:rgba(0,0,0,0.5); color:white; border:none; padding:15px; border-radius:50%; cursor:pointer;">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <h2 style="text-align:center; margin-bottom:50px; font-size: 2.2rem; letter-spacing: 4px; font-weight:900;">BEST SELLERS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <a href="product.html" style="text-decoration:none; color:inherit;">
+                    <div class="oval-img"><img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=400"></div>
+                    <h4>Almond Bar Chocolate</h4><p class="price">NT$ 615</p><div class="stars">★★★★★</div>
+                </a>
+            </div>
+            <div class="product-card"><div class="oval-img"><img src="img\2-2.jpg"></div><h4>Pure Milk Chocolate</h4><p class="price">NT$ 595</p><div class="stars">★★★★☆</div></div>
+            <div class="product-card"><div class="oval-img"><img src="img\2-3.jpg"></div><h4>Dark Cacao 75%</h4><p class="price">NT$ 650</p><div class="stars">★★★★★</div></div>
+            <div class="product-card"><div class="oval-img"><img src="img\2-4.jpg"></div><h4>White Symphony</h4><p class="price">NT$ 550</p><div class="stars">★★★★☆</div></div>
+            <div class="product-card"><div class="oval-img"><img src="img\2-5.jpg"></div><h4>Matcha Green Tea</h4><p class="price">NT$ 620</p><div class="stars">★★★★★</div></div>
+            <div class="product-card"><div class="oval-img"><img src="img\2-6.jpg"></div><h4>Strawberry Fusion</h4><p class="price">NT$ 580</p><div class="stars">★★★★☆</div></div>
+            <div class="product-card"><div class="oval-img"><img src="img\2-7.jpg"></div><h4>Hokkaido Cream</h4><p class="price">NT$ 600</p><div class="stars">★★★★★</div></div>
+            <div class="product-card"><div class="oval-img"><img src="img\2-8.jpg"></div><h4>Nutty Crunch</h4><p class="price">NT$ 590</p><div class="stars">★★★★☆</div></div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background:#fff;">
+        <h2 style="text-align:center; margin-bottom:40px; letter-spacing:3px;">THE CRAFTSMANSHIP</h2>
+        <div class="container-wide">
+            <div class="video-wrapper">
+            <video src="img/chocolate.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;"></video>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <div class="footer-box">
+                <h3>CONTACT</h3>
+                <p>0800-XXX-XXX<br>service@royce.com</p>
+            </div>
+            <div class="footer-box">
+                <h3>FOLLOW US</h3>
+                <div class="social-links">
+                    <a href="#">FB</a><a href="#">IG</a><a href="#">LINE</a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>LOCATION</h3>
+                <p>Sapporo, Hokkaido, Japan<br>Taipei Flagship Store</p>
+            </div>
+        </div>
+        <div class="copyright">© 2026 ROYCE' Confect Co., Ltd. All Rights Reserved.</div>
+    </footer>
+
+    <div class="fab-container">
+        <button id="backToTop" class="back-to-top">↑</button>
+        <a href="about.html" class="floating-btn">品牌<br>故事</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

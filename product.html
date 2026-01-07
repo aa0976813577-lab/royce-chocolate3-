@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Bar Almond | ROYCE' Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+       
+        .breadcrumb { font-size: 12px; margin-bottom: 20px; opacity: 0.6; }
+        .breadcrumb a { color: var(--primary-brown); text-decoration: none; }
+        
+        .product-detail-container { display: flex; gap: 60px; flex-wrap: wrap; align-items: flex-start; }
+        .product-image-side { flex: 1.2; min-width: 350px; }
+        .product-info-side { flex: 1; min-width: 350px; }
+        
+        .main-product-img { width: 100%; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+        
+        .product-badge { background: var(--accent-orange); color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px; }
+        .product-title { font-size: 2.5rem; font-weight: 900; margin-bottom: 10px; line-height: 1.2; }
+        
+        .qty-selector { display: flex; align-items: center; gap: 15px; margin: 30px 0; }
+        .qty-btn { border: 1px solid var(--primary-brown); background: none; width: 35px; height: 35px; cursor: pointer; border-radius: 5px; font-weight: bold; }
+        
+        .action-btns { display: flex; gap: 15px; margin-top: 20px; }
+        .btn-add-cart { flex: 1; background: var(--primary-brown); color: white; border: none; padding: 15px; font-weight: 900; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .btn-add-cart:hover { background: var(--accent-orange); }
+
+        .product-tabs { border-top: 1px solid #eee; margin-top: 50px; padding-top: 30px; }
+        .tab-content { font-size: 0.95rem; color: #666; line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <div class="marquee-bar">✨ 全館消費滿 NT$1,500 免運費 | 北海道直送限量發售中 ✨</div>
+
+    <header>
+        <div class="logo"><a href="index.html">ROYCE'</a></div>
+        <nav>
+            <a href="index.html">Our Chocolate</a>
+            <div class="font-controls">
+                <button id="font-decrease" class="font-btn">A-</button>
+                <button id="font-increase" class="font-btn">A+</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="section-padding">
+        <div class="breadcrumb">
+            <a href="index.html">首頁</a> / <a href="#">經典巧克力棒</a> / Chocolate Bar Almond
+        </div>
+
+        <div class="product-detail-container">
+            <div class="product-image-side">
+                <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=800" alt="Almond Chocolate" class="main-product-img">
+            </div>
+
+            <div class="product-info-side">
+                <span class="product-badge">BEST SELLER</span>
+                <h1 class="product-title">Chocolate Bar <br>Almond</h1>
+                <div class="stars">★★★★★ <span style="color:#888; margin-left:10px;">(128 Reviews)</span></div>
+                
+                <p class="price" style="font-size: 2rem; margin: 20px 0;">NT$ 615</p>
+                
+                <p style="color: #666;">這是一款結合了香脆整顆杏仁與濃郁牛奶巧克力的經典之作。我們選用最優質的可可豆與加州頂級杏仁製作而成，每一口都能感受到極致的層次感。</p>
+
+                <div class="qty-selector">
+                    <span>數量</span>
+                    <button class="qty-btn" onclick="changeQty(-1)">-</button>
+                    <span id="qty-val">1</span>
+                    <button class="qty-btn" onclick="changeQty(1)">+</button>
+                </div>
+
+                <div class="action-btns">
+                    <button class="btn-add-cart">加入購物車</button>
+                </div>
+
+                <div class="product-tabs">
+                    <h3 style="margin-bottom:15px; font-size: 1rem;">產品資訊</h3>
+                    <div class="tab-content">
+                        內容物：1 條 (120g)<br>
+                        保存期限：製造日起 3 個月<br>
+                        產地：日本北海道<br>
+                        過敏原提醒：本產品含有牛奶、堅果及大豆成分。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 100px;">
+            <h2 style="text-align:center; margin-bottom:50px;">你可能也會喜歡</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="oval-img"><img src="img\2-2.jpg"></div>
+                    <h4>Pure Milk</h4><p class="price">NT$ 595</p>
+                </div>
+                <div class="product-card">
+                    <div class="oval-img"><img src="img\2-3.jpg"></div>
+                    <h4>Dark Cacao</h4><p class="price">NT$ 650</p>
+                </div>
+                <div class="product-card">
+                    <div class="oval-img"><img src="img\2-4.jpg"></div>
+                    <h4>White Box</h4><p class="price">NT$ 550</p>
+                </div>
+                <div class="product-card">
+                    <div class="oval-img"><img src="img\2-5.jpg"></div>
+                    <h4>Matcha Box</h4><p class="price">NT$ 620</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">© 2026 ROYCE' Confect Co., Ltd. All Rights Reserved.</div>
+    </footer>
+
+    <div class="fab-container">
+        <button id="backToTop" class="back-to-top">↑</button>
+        <a href="index.html" class="floating-btn">回到<br>首頁</a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      
+        let qty = 1;
+        function changeQty(n) {
+            qty = Math.max(1, qty + n);
+            document.getElementById('qty-val').innerText = qty;
+        }
+    </script>
+</body>
+</html>
